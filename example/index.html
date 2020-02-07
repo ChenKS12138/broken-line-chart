@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      border: 0;
+      padding: 0;
+      margin: 0;
+    }
+    #app{
+      background-color: cadetblue;
+      width: 100vw;
+      height: 100vh;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    canvas{
+      margin: 20px;
+      border: white 3px solid;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <canvas id="canvas"></canvas>
+    <div>Hello World</div>
+  </div>
+  <script src="../dist/index.js"></script>
+  <script>
+    const el = document.querySelector("#canvas");
+    const size = {
+      width:400,
+      height:400
+    };
+    const data = [
+      {
+        lineColor:'rgb(12,142,175)',
+        // textColor:'#766F91',
+        textColor:"white",
+        pointColor:'rgb(128, 191, 255)',
+        pointSize:4,
+        lineWidth:3,
+        data:[
+          {
+            value:0.3,
+            text:'16℃',
+            offest:-0.2
+          },
+          {
+            value:0.5,
+            text:'17℃',
+            offest:-0.2
+          },
+          {
+            value:0.8,
+            text:'20℃',
+            offest:-0.2
+          }
+          ,
+          {
+            value:0.8,
+            text:'20℃',
+            offest:-0.2
+          }
+        ]
+      }
+    ];
+    const animate = borkenLineChart(el,size,data);
+    // document.querySelector("#canvas").addEventListener("click",() => {
+      animate();
+    // });
+  </script>
+</body>
+</html>
