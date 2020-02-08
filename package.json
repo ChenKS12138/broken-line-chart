@@ -1,7 +1,7 @@
 {
   "name": "broken-line-chart",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "折线图 line-chart",
   "main": "dist/index.js",
   "scripts": {
     "build": ""
@@ -17,5 +17,7 @@
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.8.4",
     "@babel/preset-env": "^7.8.4"
-  }
+  },
+  "repository": "https://github.com/chenks12138/broken-line-chart",
+  "homepage": "https://github.com/chenks12138/broken-line-chart"
 }
