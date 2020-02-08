@@ -1,10 +1,10 @@
 {
   "name": "broken-line-chart",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "折线图 line-chart",
   "main": "dist/index.js",
   "scripts": {
-    "build": ""
+    "build": "./node_modules/.bin/babel ./src/ -d ./dist/"
   },
   "keywords": [
     "chart",

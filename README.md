@@ -1,10 +1,20 @@
 ## borken-line-chart(折线图)
 
 ### 安装方式
+via `npm`
 ```bash
 npm install broken-line-chart
-// or
+```
+
+via `yarn`
+```bash
 yarn add broken-line-chart
+```
+
+via `cdn`
+```html
+<script src="https://raw.githubusercontent.com/ChenKS12138/broken-line-chart/master/dist/index.js">
+</script>
 ```
 
 ### 如何使用
@@ -24,7 +34,7 @@ const data = [
     lineWidth:3,
     data:[
       {
-      value:0.3,
+        value:0.3,
         text:'16℃',
         offest:-0.2
       },
@@ -48,6 +58,6 @@ const data = [
   }
 ];
 const animate = borkenLineChart(el,size,data);
-animate();
+animate(); // 调用动画
 ```
 
